@@ -279,8 +279,8 @@ void ControllerPrivate::registerActionMethods(const QMetaObject *meta, Controlle
 
             // Build up the list of attributes for the class info
             QByteArray attributeArray;
-            for (int i = meta->classInfoCount() - 1; i >= 0; --i) {
-                QMetaClassInfo classInfo = meta->classInfo(i);
+            for (int i2 = meta->classInfoCount() - 1; i2 >= 0; --i2) {
+                QMetaClassInfo classInfo = meta->classInfo(i2);
                 if (name == classInfo.name()) {
                     attributeArray.append(classInfo.value());
                 }
